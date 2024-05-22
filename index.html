@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFWave Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            margin: 20px;
+            padding: 20px
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        td, th {
+            text-align: center;
+            padding: 4px;
+        }
+        audio {
+            margin: 0 10px;
+        }
+        .abstract, .title {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        .abstract-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .abstract-text, .title-text {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<div class="title">
+    <h1>RFWave: Multi-band Rectified Flow for Audio Waveform Reconstruction</h1>
+</div>
+<div class="abstract">
+    <p class="abstract-title">Abstract</p>
+    <p class="abstract-text">Recent advancements in generative modeling have led to significant progress in audio waveform reconstruction from diverse representations.
+        Although diffusion models have been used for reconstructing audio waveforms, they tend to exhibit latency issues because they operate at the level of individual sample points and require a relatively large number of sampling steps.
+        In this study, we introduce RFWave, a novel multi-band Rectified Flow approach that reconstructs high-fidelity audio waveforms from Mel-spectrograms or discrete tokens.
+        RFWave is distinctive for generating complex spectrograms and operating at the frame level, processing all subbands concurrently to enhance efficiency. 
+        Thanks to Rectified Flow, which aims for a flat transport trajectory, RFWave requires only 10 sampling steps.
+        Empirical evaluations demonstrate that RFWave achieves exceptional reconstruction quality and superior computational efficiency, capable of generating audio at a speed 97 times faster than real-time on a GPU./p>
+</div>
+
+    <br>
+    <br>
+<body>
+    <h3>LibriTTS</h3>
+    <p>Coming soon...</p>
+    <h3>Opencpop</h3>
+    <p>Coming soon...</p>
+    <h3>Jamendo</h3>
+    <p>Coming soon...</p>
+    <h3>Neural Codec</h3>
+
+</body>
+</html>
