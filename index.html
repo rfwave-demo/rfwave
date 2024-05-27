@@ -10,31 +10,20 @@
             justify-content: center; /* 水平居中 */
             align-items: center; /* 垂直居中 */
             padding: 20px;
-            min-width: 960px;
+            min-width: 1080px;
             max-width: 2000px;
             overflow-x: auto;
             margin: 0 auto;
         }
-        table {
-            width: 80%;
-            border-collapse: collapse;
-        }
-        td, th {
-            text-align: center;
-            padding: 4px;
-        }
-        audio {
-            margin: 0 10px;
-        }
-        .abstract, .title {
+        .abstract, .title, .tags-info {
             width: 100%;
             margin-bottom: 20px;
         }
-        .abstract-title {
+        .abstract-title, .tags-info-title {
             font-weight: bold;
             margin-top: 20px;
         }
-        .abstract-text, .title-text {
+        .abstract-text, .tags-info-text {
             text-align: justify;
         }
     </style>
@@ -47,6 +36,13 @@
 <div class="abstract">
     <p class="abstract-title">Abstract</p>
     <p class="abstract-text">Recent advancements in generative modeling have significantly enhanced the reconstruction of audio waveforms from various representations. While diffusion models are adept at this task, they are hindered by latency issues due to their operation at the individual sample point level and the need for numerous sampling steps. In this study, we introduce RFWave, a cutting-edge multi-band Rectified Flow approach designed to reconstruct high-fidelity audio waveforms from Mel-spectrograms or discrete tokens. RFWave uniquely generates complex spectrograms and operates at the frame level, processing all subbands simultaneously to boost efficiency. Leveraging Rectified Flow, which targets a flat transport trajectory, RFWave achieves reconstruction with just 10 sampling steps. Our empirical evaluations show that RFWave not only provides outstanding reconstruction quality but also offers vastly superior computational efficiency, enabling audio generation at speeds up to 97 times faster than real-time on a GPU.</p>
+</div>
+<div class="tags-info">
+    <p class="tags-info-title">Configuration Definitions</p>
+    <p class="tags-info-text">
+        +CFG2 : Classifier-free guidance with a guidance coefficient of 2.0.<br>
+        +STFT : Applied STFT loss to enhance model accuracy.
+    </p>
 </div>
 <br>
 <body>
