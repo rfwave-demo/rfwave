@@ -9,8 +9,11 @@
             font-family: Arial, sans-serif;
             justify-content: center; /* 水平居中 */
             align-items: center; /* 垂直居中 */
-            margin: 20px;
-            padding: 20px
+            padding: 20px;
+            min-width: 960px;
+            max-width: 2000px;
+            overflow-x: auto;
+            margin: 0 auto;
         }
         table {
             width: 80%;
@@ -24,7 +27,7 @@
             margin: 0 10px;
         }
         .abstract, .title {
-            width: 80%;
+            width: 100%;
             margin-bottom: 20px;
         }
         .abstract-title {
@@ -35,6 +38,7 @@
             text-align: justify;
         }
     </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <div class="title">
@@ -42,24 +46,170 @@
 </div>
 <div class="abstract">
     <p class="abstract-title">Abstract</p>
-    <p class="abstract-text">Recent advancements in generative modeling have led to significant progress in audio waveform reconstruction from diverse representations.
-        Although diffusion models have been used for reconstructing audio waveforms, they tend to exhibit latency issues because they operate at the level of individual sample points and require a relatively large number of sampling steps.
-        In this study, we introduce RFWave, a novel multi-band Rectified Flow approach that reconstructs high-fidelity audio waveforms from Mel-spectrograms or discrete tokens.
-        RFWave is distinctive for generating complex spectrograms and operating at the frame level, processing all subbands concurrently to enhance efficiency. 
-        Thanks to Rectified Flow, which aims for a flat transport trajectory, RFWave requires only 10 sampling steps.
-        Empirical evaluations demonstrate that RFWave achieves exceptional reconstruction quality and superior computational efficiency, capable of generating audio at a speed 97 times faster than real-time on a GPU.</p>
+    <p class="abstract-text">Recent advancements in generative modeling have significantly enhanced the reconstruction of audio waveforms from various representations. While diffusion models are adept at this task, they are hindered by latency issues due to their operation at the individual sample point level and the need for numerous sampling steps. In this study, we introduce RFWave, a cutting-edge multi-band Rectified Flow approach designed to reconstruct high-fidelity audio waveforms from Mel-spectrograms or discrete tokens. RFWave uniquely generates complex spectrograms and operates at the frame level, processing all subbands simultaneously to boost efficiency. Leveraging Rectified Flow, which targets a flat transport trajectory, RFWave achieves reconstruction with just 10 sampling steps. Our empirical evaluations show that RFWave not only provides outstanding reconstruction quality but also offers vastly superior computational efficiency, enabling audio generation at speeds up to 97 times faster than real-time on a GPU.</p>
 </div>
-
-    <br>
-    <br>
+<br>
 <body>
-    <h3>LibriTTS</h3>
-    <p>Coming soon...</p>
-    <h3>Opencpop</h3>
-    <p>Coming soon...</p>
-    <h3>Jamendo</h3>
-    <p>Coming soon...</p>
-    <h3>Neural Codec</h3>
+    <h2>Audio Reconstruction from Mel-spectrogram</h2>
+    <br>
+    <h3>LibriTTS&nbsp;(<a href="./libritts.html">more</a>)</h3>
+    <div class="audio-container">
+        <div class="audio-title-container eight">
+            <div class="audio-title"><strong>Ground Truth</strong></div>
+            <div class="audio-title"><strong>Vocos</strong></div>
+            <div class="audio-title"><strong>PriorGrad</strong></div>
+            <div class="audio-title"><strong>FreGrad</strong></div>
+            <div class="audio-title"><strong>RFWave</strong></div>
+            <div class="audio-title"><strong>RFWave + STFT</strong></div>
+            <div class="audio-title"><strong>RFWave + CFG2</strong></div>
+            <div class="audio-title"><strong>RFWave + CFG2 + STFT</strong></div>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/ground_truth_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/vocos_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/priorgrad_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/fregrad_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_1_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_1_ft_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_2_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_2_ft_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/ground_truth_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/vocos_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/priorgrad_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/fregrad_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_1_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_1_ft_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_2_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_2_ft_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/ground_truth_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/vocos_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/priorgrad_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/fregrad_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_1_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_1_ft_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_2_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_2_ft_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
+        </div>
+    </div>    
+    
+    <h3>Opencpop&nbsp;(<a href="./opencpop.html">more</a>)</h3>
+    <div class="audio-container">
+        <div class="audio-title-container eight">
+            <div class="audio-title"><strong>Ground Truth</strong></div>
+            <div class="audio-title"><strong>Vocos</strong></div>
+            <div class="audio-title"><strong>PriorGrad</strong></div>
+            <div class="audio-title"><strong>FreGrad</strong></div>
+            <div class="audio-title"><strong>RFWave</strong></div>
+            <div class="audio-title"><strong>RFWave + STFT</strong></div>
+            <div class="audio-title"><strong>RFWave + CFG2</strong></div>
+            <div class="audio-title"><strong>RFWave + CFG2 + STFT</strong></div>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/ground_truth_SEP_2009000313.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/vocos_SEP_2009000313.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/priorgrad_SEP_2009000313.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/fregrad_SEP_2009000313.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/rfwave_cfg_1_SEP_2009000313.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/rfwave_cfg_1_ft_SEP_2009000313.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/rfwave_cfg_2_SEP_2009000313.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000313/rfwave_cfg_2_ft_SEP_2009000313.wav" type="audio/wav">not support</audio>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/ground_truth_SEP_2009000314.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/vocos_SEP_2009000314.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/priorgrad_SEP_2009000314.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/fregrad_SEP_2009000314.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/rfwave_cfg_1_SEP_2009000314.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/rfwave_cfg_1_ft_SEP_2009000314.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/rfwave_cfg_2_SEP_2009000314.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000314/rfwave_cfg_2_ft_SEP_2009000314.wav" type="audio/wav">not support</audio>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/ground_truth_SEP_2009000322.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/vocos_SEP_2009000322.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/priorgrad_SEP_2009000322.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/fregrad_SEP_2009000322.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/rfwave_cfg_1_SEP_2009000322.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/rfwave_cfg_1_ft_SEP_2009000322.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/rfwave_cfg_2_SEP_2009000322.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/opencpop/2009000322/rfwave_cfg_2_ft_SEP_2009000322.wav" type="audio/wav">not support</audio>
+        </div>
+    </div>
+    
+    <h3>Jamendo&nbsp;(<a href="./jamendo.html">more</a>)</h3>
+    <div class="audio-container">
+        <div class="audio-title-container eight">
+            <div class="audio-title"><strong>Ground Truth</strong></div>
+            <div class="audio-title"><strong>Vocos</strong></div>
+            <div class="audio-title"><strong>PriorGrad</strong></div>
+            <div class="audio-title"><strong>FreGrad</strong></div>
+            <div class="audio-title"><strong>RFWave</strong></div>
+            <div class="audio-title"><strong>RFWave + STFT</strong></div>
+            <div class="audio-title"><strong>RFWave + CFG2</strong></div>
+            <div class="audio-title"><strong>RFWave + CFG2 + STFT</strong></div>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/ground_truth_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/vocos_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/priorgrad_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/fregrad_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_1_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_1_ft_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_2_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_2_ft_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/ground_truth_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/vocos_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/priorgrad_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/fregrad_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_1_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_1_ft_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_2_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_2_ft_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
+        </div>
+    
+    <div class="audio-row eight">
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/ground_truth_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/vocos_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/priorgrad_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/fregrad_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_1_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_1_ft_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_2_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+            <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_2_ft_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
+        </div>
+    </div>
+    <br>
+    <h2>Audio Reconstruction from Discrete Tokens</h2>
+    <br>
+    <h3>Speech</h3>
+    <h4>1.5 kbps (<a href="">more</a>)</h4>
+    <h4>3.0 kbps (<a href="">more</a>)</h4>
+    <h4>6.0 kbps (<a href="">more</a>)</h4>
+    <h4>12.0 kbps (<a href="">more</a>)</h4>
+    <h3>Vocal</h3>
+    <h4>1.5 kbps (<a href="">more</a>)</h4>
+    <h4>3.0 kbps (<a href="">more</a>)</h4>
+    <h4>6.0 kbps (<a href="">more</a>)</h4>
+    <h4>12.0 kbps (<a href="">more</a>)</h4>
+    <h3>Sound Effect</h3>
+    <h4>1.5 kbps (<a href="">more</a>)</h4>
+    <h4>3.0 kbps (<a href="">more</a>)</h4>
+    <h4>6.0 kbps (<a href="">more</a>)</h4>
+    <h4>12.0 kbps (<a href="">more</a>)</h4>
 
 </body>
 </html>
