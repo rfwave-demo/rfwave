@@ -1,0 +1,91 @@
+.introduction {
+    margin: 20px auto;
+    min-width: 900px;
+    max-width: 1800px;
+    padding: 20px;
+    background-color: #f7f7f7; /* Light grey background for contrast */
+    border-radius: 8px; /* Slight rounding of corners for aesthetics */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.introduction h1 {
+    color: #333; /* Dark grey for good readability */
+    font-size: 24px; /* Slightly larger text for the title */
+}
+
+.introduction p, .introduction ul {
+    color: #666; /* Medium grey for the text */
+    font-size: 16px;
+    line-height: 1.6; /* More readable line spacing */
+}
+
+.introduction ul {
+    text-align: left;
+    list-style-type: disc; /* Regular bullet points */
+    padding-left: 20px; /* Proper indentation for bullet points */
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 960px;
+    max-width: 2000px;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+.audio-title-container, .audio-row {
+    display: flex;
+    min-width: 100%; 
+    overflow-x: auto;  
+}
+
+.audio-title, audio {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.audio-title-container.eight .audio-title, 
+.audio-row.eight audio {
+    flex: 1 1 12.5%; /* 每个元素占据一行的12.5% */
+}
+
+.audio-title-container.seven .audio-title, 
+.audio-row.seven audio {
+    flex: 1 1 14.2857%; /* 每个元素占据一行的约14.29% */
+}
+
+.audio-title-container.six .audio-title, 
+.audio-row.six audio {
+    flex: 1 1 16.6667%; /* 每个元素占据一行的约16.67% */
+}
+
+.link-back {
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7; /* Matching the introduction background */
+    border-radius: 8px; /* Consistent with the introduction */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    max-width: 1800px;
+    min-width: 900px;
+}
+
+.link-back a {
+    color: #333; /* Dark grey for good readability */
+    font-size: 16px; /* Matching the introduction text size */
+    text-decoration: none; /* Removes underline */
+    padding: 8px 16px;
+    border: 1px solid #ccc; /* Subtle border for the link */
+    border-radius: 4px; /* Slight rounding of link corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.link-back a:hover {
+    background-color: #eaeaea; /* Lighter grey on hover for interactivity */
+    color: #000; /* Slightly darker text on hover for contrast */
+}
