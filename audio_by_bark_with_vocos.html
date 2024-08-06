@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example With Bark</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="introduction">
+    <h1>Example With Bark</h1>
+    <p> An example of generating audio using the bark tool (testing the audio reconstruction model with Token), where the RFWave model uses STFT loss and classifier-free guidance with a guidance coefficient of 2.0. </p>
+    
+</div>
+
+<div class="audio-container">
+    <div class="audio-title-container four">
+        <div class="audio-title"><strong>EnCodec</strong></div>
+        <div class="audio-title"><strong>MBD</strong></div>
+        <div class="audio-title"><strong>Vocos</strong></div>
+        <div class="audio-title"><strong>RFWave</strong></div>
+    </div>
+
+<p> 001 prompt: 他冲到马路对面，回到办公室，厉声吩咐秘书不要打扰他，然后抓起话筒，刚要拨通家里的电话，临时又变了卦。 </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/001_zh_speaker_8_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/001_zh_speaker_8_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/001_zh_speaker_8_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/001_zh_speaker_8_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 002 prompt: 若不是他在面包房附近又碰到那群批斗篷的人，他早就把他们忘了。 </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/002_zh_speaker_6_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/002_zh_speaker_6_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/002_zh_speaker_6_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/002_zh_speaker_6_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 003 prompt: 这个小老头打了个趔趄，差点儿摔倒。“对不起。”德思礼先生嘟哝说。 </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/003_zh_speaker_2_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/003_zh_speaker_2_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/003_zh_speaker_2_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/003_zh_speaker_2_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 004 prompt: 他心乱如麻，连忙朝自己的汽车跑过去，开车回家。他希望这一切只是幻象，他从来没有幻想过什么，因为他根本不赞同幻想。 </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/004_zh_speaker_1_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/004_zh_speaker_1_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/004_zh_speaker_1_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/004_zh_speaker_1_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 005 prompt: 微风拂动着女贞路两旁整洁的树篱，街道在漆黑的天空下寂静无声，一尘不染，谁也不会想到这里会发生骇人听闻的事情。 </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/005_zh_speaker_7_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/005_zh_speaker_7_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/005_zh_speaker_7_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/005_zh_speaker_7_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 006 prompt: 四川美食确实以辣闻名，但也有不辣的选择。比如甜水面、赖汤圆、蛋烘糕、叶儿粑等，这些小吃口味温和，甜而不腻，也很受欢迎。 </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/006_zh_speaker_5_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/006_zh_speaker_5_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/006_zh_speaker_5_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/006_zh_speaker_5_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 007 prompt: 那女孩儿委屈的说：“我一回头见你已经进去了我不敢进去啊！ </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/007_zh_speaker_2_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/007_zh_speaker_2_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/007_zh_speaker_2_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/007_zh_speaker_2_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 008 prompt: 晚上加完班开车回家，太累了，迷迷糊糊开着车，走一半的时候，“铛”一声！ </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/008_zh_speaker_6_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/008_zh_speaker_6_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/008_zh_speaker_6_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/008_zh_speaker_6_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 009 prompt: 算命其实只是人们的一种自我安慰和自我暗示而已，我们还是要相信科学才好。 </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/009_zh_speaker_4_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/009_zh_speaker_4_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/009_zh_speaker_4_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/009_zh_speaker_4_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 010 prompt: 倒水的学生只听到前半句，遵其命再倾其余水，边倒边叫：去你的！ </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/010_zh_speaker_4_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/010_zh_speaker_4_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/010_zh_speaker_4_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/010_zh_speaker_4_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 011 prompt: He dashed back across the road, hurried up to his office, snapped at his  secretary not to disturb him, seized his telephone, and had almost  finished dialing his home number when he changed his mind. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/011_en_speaker_9_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/011_en_speaker_9_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/011_en_speaker_9_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/011_en_speaker_9_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 012 prompt: He'd forgotten all about the people in cloaks until he passed a group of  them next to the baker's. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/012_en_speaker_4_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/012_en_speaker_4_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/012_en_speaker_4_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/012_en_speaker_4_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 013 prompt: "Sorry," he grunted, as the tiny old man stumbled and almost fell. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/013_en_speaker_3_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/013_en_speaker_3_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/013_en_speaker_3_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/013_en_speaker_3_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 014 prompt: He was rattled. He hurried to his car and set off for home, hoping he was imagining things, which he had never hoped before, because he  didn't approve of imagination. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/014_en_speaker_5_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/014_en_speaker_5_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/014_en_speaker_5_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/014_en_speaker_5_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 015 prompt: A breeze ruffled the neat hedges of Privet Drive, which lay silent and tidy under the inky sky, the very last place you would expect  astonishing things to happen. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/015_en_speaker_3_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/015_en_speaker_3_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/015_en_speaker_3_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/015_en_speaker_3_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 016 prompt: So true. I feel like people are moving around China so much. I've never been to the train station and like it be empty. You know which I think is is is so interesting. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/016_en_speaker_7_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/016_en_speaker_7_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/016_en_speaker_7_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/016_en_speaker_7_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 017 prompt: Woo, but back to the travel, um um yeah I when I I usually just show up and I like make the plan as I go cause you know we when you go to a city, you don't wanna have to have the obligation of, oh I've got to leave here, because I've got my next plane like, right now. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/017_en_speaker_5_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/017_en_speaker_5_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/017_en_speaker_5_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/017_en_speaker_5_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 018 prompt: I have not. I've actually always wanted to but then I was like uh I've there's other things to do. Tell me more, tell me about it though. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/018_en_speaker_9_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/018_en_speaker_9_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/018_en_speaker_9_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/018_en_speaker_9_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 019 prompt: Um, is it is it colds like the water up there even during the summer? </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/019_en_speaker_0_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/019_en_speaker_0_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/019_en_speaker_0_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/019_en_speaker_0_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 020 prompt: Yeah, so true. You know I'm terrible at separating work life and personal life. </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/020_en_speaker_9_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/020_en_speaker_9_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/020_en_speaker_9_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/020_en_speaker_9_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 021 prompt: ♪♪ "♪ In the jungle ♪,  ♪ the mighty jungle ♪, ♪ the lion barks tonight ♪" ♪♪ </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/101_en_speaker_2_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/101_en_speaker_2_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/101_en_speaker_2_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/101_en_speaker_2_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 022 prompt: ♪♪ [music] ♪♪ </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/103_en_speaker_7_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/103_en_speaker_7_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/103_en_speaker_7_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/103_en_speaker_7_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+<p> 023 prompt: ♪♪ [piano] ♪♪ </p>
+<div class="audio-row four">
+        <audio controls><source src="bark_audios/encodec/104_en_speaker_7_encodec.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/mbd/104_en_speaker_7_mbd.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/vocos/104_en_speaker_7_vocos.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="bark_audios/rfwave/104_en_speaker_7_rfwave.wav" type="audio/wav">not support</audio>
+</div>
+
+</div>
+<div class="link-back">
+    <a href="index.html">Back to Home</a>
+</div>
+</body>
+</html>
+
