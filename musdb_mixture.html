@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Demo : MusDB mixture</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="introduction">
+    <h1>Demo for MusDB mixture</h1>
+    <p>Audio Reconstruction from Mel-spectrogram using different models tested on MusDB mixture.</p>
+    <ul>
+        <li><strong>Vocos:</strong> Model Trained on Libritts </li>
+        <li><strong>PriorGrad:</strong> Model Trained on Libritts  </li>
+        <li><strong>FreGrad:</strong> Model Trained on Libritts </li>
+        <li><strong>BigVGAN-base:</strong> Model Trained on Libritts, 14M Parameters </li>
+        <li><strong>BigVGAN:</strong> Model Trained on Libritts, 112M Parameters </li>
+        <li><strong>RFWave:</strong> Model Trained on Libritts </li>
+        <li><strong>BigVGAN-V2:</strong> Model Trained on Nvidia's Large-scale Compilation Dataset, 112M Parameters</li>
+        <li><strong>RFWave-Universal:</strong> Model Trained on DNS-Chanllenge, MTG-Jamendo and AudiuoSet </li>
+    </ul>
+</div>
+
+<div class="audio-container">
+    <div class="audio-title-container nine">
+        <div class="audio-title"><strong>Ground Truth</strong></div>
+        <div class="audio-title"><strong>Vocos</strong></div>
+        <div class="audio-title"><strong>PriorGrad</strong></div>
+        <div class="audio-title"><strong>FreGrad</strong></div>
+        <div class="audio-title"><strong>BigVGAN-base</strong></div>
+        <div class="audio-title"><strong>BigVGAN</strong></div>
+        <div class="audio-title"><strong>RFWave</strong></div>
+        <div class="audio-title"><strong>BigVGAN-v2</strong></div>
+        <div class="audio-title"><strong>RFWave-Universal</strong></div>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/groundtruth_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/vocoslibritts_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/priorgradlibritts_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/fregradlibritts_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/bigvganbaselibritts_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/bigvganlibritts_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/rfwavelibritts_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/bigvganv2libritts_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_00/rfwaveuniversal_SEP_Mu_-_Too_Bright-mixture_00.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/groundtruth_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/vocoslibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/priorgradlibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/fregradlibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/bigvganbaselibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/bigvganlibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/rfwavelibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/bigvganv2libritts_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_08/rfwaveuniversal_SEP_Al_James_-_Schoolboy_Facination-mixture_08.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/groundtruth_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/vocoslibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/priorgradlibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/fregradlibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/bigvganbaselibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/bigvganlibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/rfwavelibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/bigvganv2libritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_10/rfwaveuniversal_SEP_Juliet's_Rescue_-_Heartbeats-mixture_10.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/groundtruth_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/vocoslibritts_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/priorgradlibritts_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/fregradlibritts_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/bigvganbaselibritts_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/bigvganlibritts_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/rfwavelibritts_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/bigvganv2libritts_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Secretariat_-_Borderline-mixture_22/rfwaveuniversal_SEP_Secretariat_-_Borderline-mixture_22.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/groundtruth_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/vocoslibritts_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/priorgradlibritts_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/fregradlibritts_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/bigvganbaselibritts_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/bigvganlibritts_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/rfwavelibritts_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/bigvganv2libritts_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_16/rfwaveuniversal_SEP_Speak_Softly_-_Like_Horses-mixture_16.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/groundtruth_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/vocoslibritts_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/priorgradlibritts_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/fregradlibritts_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/bigvganbaselibritts_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/bigvganlibritts_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/rfwavelibritts_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/bigvganv2libritts_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Speak_Softly_-_Like_Horses-mixture_18/rfwaveuniversal_SEP_Speak_Softly_-_Like_Horses-mixture_18.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/groundtruth_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/vocoslibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/priorgradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/fregradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/bigvganbaselibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/bigvganlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/rfwavelibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/bigvganv2libritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_13/rfwaveuniversal_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_13.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/groundtruth_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/vocoslibritts_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/priorgradlibritts_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/fregradlibritts_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/bigvganbaselibritts_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/bigvganlibritts_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/rfwavelibritts_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/bigvganv2libritts_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/PR_-_Oh_No-mixture_00/rfwaveuniversal_SEP_PR_-_Oh_No-mixture_00.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/groundtruth_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/vocoslibritts_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/priorgradlibritts_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/fregradlibritts_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/bigvganbaselibritts_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/bigvganlibritts_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/rfwavelibritts_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/bigvganv2libritts_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Timboz_-_Pony-mixture_08/rfwaveuniversal_SEP_Timboz_-_Pony-mixture_08.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/groundtruth_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/vocoslibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/priorgradlibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/fregradlibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/bigvganbaselibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/bigvganlibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/rfwavelibritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/bigvganv2libritts_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Juliet's_Rescue_-_Heartbeats-mixture_07/rfwaveuniversal_SEP_Juliet's_Rescue_-_Heartbeats-mixture_07.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/groundtruth_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/vocoslibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/priorgradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/fregradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/bigvganbaselibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/bigvganlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/rfwavelibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/bigvganv2libritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_18/rfwaveuniversal_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_18.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/groundtruth_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/vocoslibritts_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/priorgradlibritts_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/fregradlibritts_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/bigvganbaselibritts_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/bigvganlibritts_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/rfwavelibritts_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/bigvganv2libritts_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_19/rfwaveuniversal_SEP_Mu_-_Too_Bright-mixture_19.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/groundtruth_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/vocoslibritts_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/priorgradlibritts_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/fregradlibritts_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/bigvganbaselibritts_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/bigvganlibritts_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/rfwavelibritts_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/bigvganv2libritts_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Mu_-_Too_Bright-mixture_10/rfwaveuniversal_SEP_Mu_-_Too_Bright-mixture_10.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/groundtruth_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/vocoslibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/priorgradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/fregradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/bigvganbaselibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/bigvganlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/rfwavelibritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/bigvganv2libritts_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Detsky_Sad_-_Walkie_Talkie-mixture_10/rfwaveuniversal_SEP_Detsky_Sad_-_Walkie_Talkie-mixture_10.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/groundtruth_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/vocoslibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/priorgradlibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/fregradlibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/bigvganbaselibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/bigvganlibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/rfwavelibritts_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/bigvganv2libritts_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/mixture/Al_James_-_Schoolboy_Facination-mixture_10/rfwaveuniversal_SEP_Al_James_-_Schoolboy_Facination-mixture_10.wav" type="audio/wav">not support</audio>
+    </div>
+
+</div>
+<div class="link-back">
+    <a href="index.html">Back to Home</a>
+</div>
+</body>
+</html>
+

@@ -47,7 +47,10 @@
     padding: 10px;
 }
 
-
+.audio-title-container.nine .audio-title, 
+.audio-row.nine audio {
+    flex: 1 1 11.1111%; /* 每个元素占据一行的12.5% */
+}
 
 .audio-title-container.eight .audio-title, 
 .audio-row.eight audio {
@@ -62,6 +65,26 @@
 .audio-title-container.six .audio-title, 
 .audio-row.six audio {
     flex: 1 1 16.6667%; /* 每个元素占据一行的约16.67% */
+}
+
+.audio-title-container.five .audio-title, 
+.audio-row.five audio {
+    flex: 1 1 20%; /* 每个元素占据一行的约16.67% */
+}
+
+.audio-title-container.four .audio-title, 
+.audio-row.four audio {
+    flex: 1 1 25%; /* 每个元素占据一行的约16.67% */
+}
+
+.audio-title-container.three .audio-title, 
+.audio-row.three audio {
+    flex: 1 1 33.3333%; /* 每个元素占据一行的约16.67% */
+}
+
+.audio-title-container.two .audio-title, 
+.audio-row.two audio {
+    flex: 1 1 50%; /* 每个元素占据一行的约16.67% */
 }
 
 .link-back {

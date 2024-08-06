@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Demo : MusDB bass</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="introduction">
+    <h1>Demo for MusDB bass</h1>
+    <p>Audio Reconstruction from Mel-spectrogram using different models tested on MusDB bass.</p>
+    <ul>
+        <li><strong>Vocos:</strong> Model Trained on Libritts </li>
+        <li><strong>PriorGrad:</strong> Model Trained on Libritts  </li>
+        <li><strong>FreGrad:</strong> Model Trained on Libritts </li>
+        <li><strong>BigVGAN-base:</strong> Model Trained on Libritts, 14M Parameters </li>
+        <li><strong>BigVGAN:</strong> Model Trained on Libritts, 112M Parameters </li>
+        <li><strong>RFWave:</strong> Model Trained on Libritts </li>
+        <li><strong>BigVGAN-V2:</strong> Model Trained on Nvidia's Large-scale Compilation Dataset, 112M Parameters</li>
+        <li><strong>RFWave-Universal:</strong> Model Trained on DNS-Chanllenge, MTG-Jamendo and AudiuoSet </li>
+    </ul>
+</div>
+
+<div class="audio-container">
+    <div class="audio-title-container nine">
+        <div class="audio-title"><strong>Ground Truth</strong></div>
+        <div class="audio-title"><strong>Vocos</strong></div>
+        <div class="audio-title"><strong>PriorGrad</strong></div>
+        <div class="audio-title"><strong>FreGrad</strong></div>
+        <div class="audio-title"><strong>BigVGAN-base</strong></div>
+        <div class="audio-title"><strong>BigVGAN</strong></div>
+        <div class="audio-title"><strong>RFWave</strong></div>
+        <div class="audio-title"><strong>BigVGAN-v2</strong></div>
+        <div class="audio-title"><strong>RFWave-Universal</strong></div>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/groundtruth_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/vocoslibritts_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/priorgradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/fregradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/bigvganbaselibritts_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/bigvganlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/rfwavelibritts_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/bigvganv2libritts_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_01/rfwaveuniversal_SEP_Al_James_-_Schoolboy_Facination-bass_01.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/groundtruth_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/vocoslibritts_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/priorgradlibritts_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/fregradlibritts_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/bigvganbaselibritts_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/bigvganlibritts_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/rfwavelibritts_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/bigvganv2libritts_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_01/rfwaveuniversal_SEP_Secretariat_-_Borderline-bass_01.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/groundtruth_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/vocoslibritts_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/priorgradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/fregradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/bigvganbaselibritts_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/bigvganlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/rfwavelibritts_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/bigvganv2libritts_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_00/rfwaveuniversal_SEP_Al_James_-_Schoolboy_Facination-bass_00.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/groundtruth_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/vocoslibritts_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/priorgradlibritts_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/fregradlibritts_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/bigvganbaselibritts_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/bigvganlibritts_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/rfwavelibritts_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/bigvganv2libritts_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Juliet's_Rescue_-_Heartbeats-bass_16/rfwaveuniversal_SEP_Juliet's_Rescue_-_Heartbeats-bass_16.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/groundtruth_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/vocoslibritts_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/priorgradlibritts_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/fregradlibritts_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/bigvganbaselibritts_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/bigvganlibritts_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/rfwavelibritts_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/bigvganv2libritts_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Moosmusic_-_Big_Dummy_Shake-bass_03/rfwaveuniversal_SEP_Moosmusic_-_Big_Dummy_Shake-bass_03.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/groundtruth_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/vocoslibritts_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/priorgradlibritts_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/fregradlibritts_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/bigvganbaselibritts_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/bigvganlibritts_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/rfwavelibritts_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/bigvganv2libritts_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_13/rfwaveuniversal_SEP_Secretariat_-_Borderline-bass_13.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/groundtruth_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/vocoslibritts_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/priorgradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/fregradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/bigvganbaselibritts_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/bigvganlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/rfwavelibritts_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/bigvganv2libritts_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_12/rfwaveuniversal_SEP_Al_James_-_Schoolboy_Facination-bass_12.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/groundtruth_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/vocoslibritts_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/priorgradlibritts_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/fregradlibritts_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/bigvganbaselibritts_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/bigvganlibritts_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/rfwavelibritts_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/bigvganv2libritts_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Secretariat_-_Borderline-bass_12/rfwaveuniversal_SEP_Secretariat_-_Borderline-bass_12.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/groundtruth_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/vocoslibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/priorgradlibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/fregradlibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/bigvganbaselibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/bigvganlibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/rfwavelibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/bigvganv2libritts_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_06/rfwaveuniversal_SEP_The_Doppler_Shift_-_Atrophy-bass_06.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/groundtruth_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/vocoslibritts_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/priorgradlibritts_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/fregradlibritts_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/bigvganbaselibritts_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/bigvganlibritts_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/rfwavelibritts_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/bigvganv2libritts_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Mu_-_Too_Bright-bass_13/rfwaveuniversal_SEP_Mu_-_Too_Bright-bass_13.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/groundtruth_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/vocoslibritts_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/priorgradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/fregradlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/bigvganbaselibritts_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/bigvganlibritts_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/rfwavelibritts_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/bigvganv2libritts_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Detsky_Sad_-_Walkie_Talkie-bass_10/rfwaveuniversal_SEP_Detsky_Sad_-_Walkie_Talkie-bass_10.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/groundtruth_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/vocoslibritts_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/priorgradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/fregradlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/bigvganbaselibritts_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/bigvganlibritts_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/rfwavelibritts_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/bigvganv2libritts_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Al_James_-_Schoolboy_Facination-bass_11/rfwaveuniversal_SEP_Al_James_-_Schoolboy_Facination-bass_11.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/groundtruth_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/vocoslibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/priorgradlibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/fregradlibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/bigvganbaselibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/bigvganlibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/rfwavelibritts_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/bigvganv2libritts_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/The_Doppler_Shift_-_Atrophy-bass_13/rfwaveuniversal_SEP_The_Doppler_Shift_-_Atrophy-bass_13.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/groundtruth_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/vocoslibritts_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/priorgradlibritts_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/fregradlibritts_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/bigvganbaselibritts_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/bigvganlibritts_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/rfwavelibritts_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/bigvganv2libritts_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_23/rfwaveuniversal_SEP_Speak_Softly_-_Like_Horses-bass_23.wav" type="audio/wav">not support</audio>
+    </div>
+
+<div class="audio-row nine">
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/groundtruth_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/vocoslibritts_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/priorgradlibritts_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/fregradlibritts_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/bigvganbaselibritts_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/bigvganlibritts_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/rfwavelibritts_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/bigvganv2libritts_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+        <audio controls><source src="musdb_audios/bass/Speak_Softly_-_Like_Horses-bass_24/rfwaveuniversal_SEP_Speak_Softly_-_Like_Horses-bass_24.wav" type="audio/wav">not support</audio>
+    </div>
+
+</div>
+<div class="link-back">
+    <a href="index.html">Back to Home</a>
+</div>
+</body>
+</html>
+
