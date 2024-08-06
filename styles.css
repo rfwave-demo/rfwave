@@ -40,7 +40,7 @@
     overflow-x: auto;  
 }
 
-.audio-title, audio {
+.audio-title, audio, img {
     flex-grow: 1;
     flex-shrink: 1;
     text-align: center;
@@ -78,12 +78,12 @@
 }
 
 .audio-title-container.three .audio-title, 
-.audio-row.three audio {
+.audio-row.three audio, img {
     flex: 1 1 33.3333%; /* 每个元素占据一行的约16.67% */
 }
 
 .audio-title-container.two .audio-title, 
-.audio-row.two audio {
+.audio-row.two audio, img {
     flex: 1 1 50%; /* 每个元素占据一行的约16.67% */
 }
 
@@ -111,4 +111,8 @@
 .link-back a:hover {
     background-color: #eaeaea; /* Lighter grey on hover for interactivity */
     color: #000; /* Slightly darker text on hover for contrast */
+}
+.responsive-img {
+    max-width: 49%;
+    height: auto;
 }
