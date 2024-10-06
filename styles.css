@@ -1,7 +1,7 @@
 .introduction {
     margin: 20px auto;
-    min-width: 900px;
-    max-width: 1800px;
+    min-width: 640px;
+    max-width: 1280px;
     padding: 20px;
     background-color: #f7f7f7; /* Light grey background for contrast */
     border-radius: 8px; /* Slight rounding of corners for aesthetics */
@@ -28,8 +28,8 @@
 .audio-container {
     display: flex;
     flex-direction: column;
-    min-width: 960px;
-    max-width: 2000px;
+    min-width: 640;
+    max-width: 1280px;
     overflow-x: auto;
     margin: 0 auto;
 }

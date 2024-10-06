@@ -11,352 +11,225 @@
 <div class="introduction">
     <h1>Demo for LibriTTS</h1>
     <p>Audio Reconstruction from Mel-spectrogram using different models and configurations.</p>
-    <ul>
-        <li><strong>+CFG2</strong> means classifier-free guidance with a guidance coefficient of 2.0</li>
-        <li><strong>+STFT</strong> means applied STFT loss</li>
-    </ul>
+    
 </div>
 
 <div class="audio-container">
-    <div class="audio-title-container eight">
+    <div class="audio-title-container four">
         <div class="audio-title"><strong>Ground Truth</strong></div>
-        <div class="audio-title"><strong>Vocos</strong></div>
         <div class="audio-title"><strong>PriorGrad</strong></div>
         <div class="audio-title"><strong>FreGrad</strong></div>
         <div class="audio-title"><strong>RFWave</strong></div>
-        <div class="audio-title"><strong>RFWave + STFT</strong></div>
-        <div class="audio-title"><strong>RFWave + CFG2</strong></div>
-        <div class="audio-title"><strong>RFWave + CFG2 + STFT</strong></div>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/ground_truth_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/vocos_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/priorgrad_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/fregrad_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_1_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_1_ft_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_2_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000003_000002/rfwave_cfg_2_ft_SEP_4970_29095_000003_000002.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/ground_truth_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/vocos_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/priorgrad_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/fregrad_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_1_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_1_ft_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_2_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123288_000023_000005/rfwave_cfg_2_ft_SEP_260_123288_000023_000005.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/ground_truth_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/vocos_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/priorgrad_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/fregrad_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_1_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_1_ft_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_2_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5142_33396_000004_000001/rfwave_cfg_2_ft_SEP_5142_33396_000004_000001.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/ground_truth_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/vocos_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/priorgrad_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/fregrad_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/rfwave_cfg_1_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/rfwave_cfg_1_ft_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/rfwave_cfg_2_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/260_123440_000023_000001/rfwave_cfg_2_ft_SEP_260_123440_000023_000001.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/ground_truth_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/vocos_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/priorgrad_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/fregrad_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/rfwave_cfg_1_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/rfwave_cfg_1_ft_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/rfwave_cfg_2_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3570_5695_000004_000010/rfwave_cfg_2_ft_SEP_3570_5695_000004_000010.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/ground_truth_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/vocos_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/priorgrad_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/fregrad_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/rfwave_cfg_1_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/rfwave_cfg_1_ft_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/rfwave_cfg_2_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000008_000000/rfwave_cfg_2_ft_SEP_4970_29095_000008_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/ground_truth_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/vocos_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/priorgrad_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/fregrad_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/rfwave_cfg_1_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/rfwave_cfg_1_ft_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/rfwave_cfg_2_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1995_1836_000004_000006/rfwave_cfg_2_ft_SEP_1995_1836_000004_000006.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/ground_truth_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/vocos_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/priorgrad_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/fregrad_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/rfwave_cfg_1_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/rfwave_cfg_1_ft_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/rfwave_cfg_2_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000078_000000/rfwave_cfg_2_ft_SEP_1580_141083_000078_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/ground_truth_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/vocos_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/priorgrad_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/fregrad_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/rfwave_cfg_1_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/rfwave_cfg_1_ft_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/rfwave_cfg_2_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5639_40744_000004_000008/rfwave_cfg_2_ft_SEP_5639_40744_000004_000008.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/ground_truth_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/vocos_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/priorgrad_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/fregrad_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/rfwave_cfg_1_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/rfwave_cfg_1_ft_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/rfwave_cfg_2_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5683_32879_000003_000000/rfwave_cfg_2_ft_SEP_5683_32879_000003_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/ground_truth_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/vocos_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/priorgrad_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/fregrad_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/rfwave_cfg_1_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/rfwave_cfg_1_ft_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/rfwave_cfg_2_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000016_000002/rfwave_cfg_2_ft_SEP_237_134500_000016_000002.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/ground_truth_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/vocos_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/priorgrad_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/fregrad_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/rfwave_cfg_1_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/rfwave_cfg_1_ft_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/rfwave_cfg_2_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000003_000001/rfwave_cfg_2_ft_SEP_8463_287645_000003_000001.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/ground_truth_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/vocos_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/priorgrad_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/fregrad_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/rfwave_cfg_1_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/rfwave_cfg_1_ft_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/rfwave_cfg_2_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7729_102255_000016_000002/rfwave_cfg_2_ft_SEP_7729_102255_000016_000002.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/ground_truth_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/vocos_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/priorgrad_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/fregrad_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/rfwave_cfg_1_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/rfwave_cfg_1_ft_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/rfwave_cfg_2_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/2300_131720_000035_000004/rfwave_cfg_2_ft_SEP_2300_131720_000035_000004.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/ground_truth_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/vocos_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/priorgrad_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/fregrad_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/rfwave_cfg_1_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/rfwave_cfg_1_ft_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/rfwave_cfg_2_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000018_000000/rfwave_cfg_2_ft_SEP_8555_284447_000018_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/ground_truth_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/vocos_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/priorgrad_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/fregrad_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/rfwave_cfg_1_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/rfwave_cfg_1_ft_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/rfwave_cfg_2_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8230_279154_000019_000000/rfwave_cfg_2_ft_SEP_8230_279154_000019_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/ground_truth_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/vocos_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/priorgrad_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/fregrad_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/rfwave_cfg_1_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/rfwave_cfg_1_ft_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/rfwave_cfg_2_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000007_000008/rfwave_cfg_2_ft_SEP_237_134500_000007_000008.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/ground_truth_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/vocos_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/priorgrad_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/fregrad_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/rfwave_cfg_1_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/rfwave_cfg_1_ft_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/rfwave_cfg_2_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/5105_28233_000014_000000/rfwave_cfg_2_ft_SEP_5105_28233_000014_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/ground_truth_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/vocos_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/priorgrad_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/fregrad_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/rfwave_cfg_1_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/rfwave_cfg_1_ft_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/rfwave_cfg_2_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/4970_29095_000029_000001/rfwave_cfg_2_ft_SEP_4970_29095_000029_000001.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/ground_truth_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/vocos_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/priorgrad_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/fregrad_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/rfwave_cfg_1_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/rfwave_cfg_1_ft_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/rfwave_cfg_2_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68771_000008_000000/rfwave_cfg_2_ft_SEP_6829_68771_000008_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/ground_truth_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/vocos_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/priorgrad_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/fregrad_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/rfwave_cfg_1_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/rfwave_cfg_1_ft_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/rfwave_cfg_2_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_287645_000024_000003/rfwave_cfg_2_ft_SEP_8463_287645_000024_000003.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/ground_truth_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/vocos_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/priorgrad_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/fregrad_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/rfwave_cfg_1_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/rfwave_cfg_1_ft_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/rfwave_cfg_2_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8463_294828_000028_000001/rfwave_cfg_2_ft_SEP_8463_294828_000028_000001.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/ground_truth_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/vocos_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/priorgrad_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/fregrad_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/rfwave_cfg_1_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/rfwave_cfg_1_ft_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/rfwave_cfg_2_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/6829_68769_000046_000000/rfwave_cfg_2_ft_SEP_6829_68769_000046_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/ground_truth_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/vocos_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/priorgrad_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/fregrad_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/rfwave_cfg_1_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/rfwave_cfg_1_ft_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/rfwave_cfg_2_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/3575_170457_000035_000000/rfwave_cfg_2_ft_SEP_3575_170457_000035_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/ground_truth_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/vocos_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/priorgrad_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/fregrad_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/rfwave_cfg_1_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/rfwave_cfg_1_ft_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/rfwave_cfg_2_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/237_134500_000035_000007/rfwave_cfg_2_ft_SEP_237_134500_000035_000007.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/ground_truth_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/vocos_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/priorgrad_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/fregrad_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/rfwave_cfg_1_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/rfwave_cfg_1_ft_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/rfwave_cfg_2_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_92135_000085_000002/rfwave_cfg_2_ft_SEP_7176_92135_000085_000002.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/ground_truth_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/vocos_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/priorgrad_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/fregrad_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/rfwave_cfg_1_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/rfwave_cfg_1_ft_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/rfwave_cfg_2_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/7176_88083_000015_000000/rfwave_cfg_2_ft_SEP_7176_88083_000015_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/ground_truth_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/vocos_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/priorgrad_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/fregrad_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/rfwave_cfg_1_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/rfwave_cfg_1_ft_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/rfwave_cfg_2_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1089_134686_000015_000002/rfwave_cfg_2_ft_SEP_1089_134686_000015_000002.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/ground_truth_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/vocos_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/priorgrad_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/fregrad_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/rfwave_cfg_1_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/rfwave_cfg_1_ft_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/rfwave_cfg_2_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/8555_284447_000038_000000/rfwave_cfg_2_ft_SEP_8555_284447_000038_000000.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/ground_truth_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/vocos_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/priorgrad_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/fregrad_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/rfwave_cfg_1_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/rfwave_cfg_1_ft_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/rfwave_cfg_2_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/libritts/1580_141083_000079_000000/rfwave_cfg_2_ft_SEP_1580_141083_000079_000000.wav" type="audio/wav">not support</audio>
     </div>
 
 </div>

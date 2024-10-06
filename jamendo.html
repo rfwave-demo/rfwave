@@ -11,352 +11,225 @@
 <div class="introduction">
     <h1>Demo for Jamendo</h1>
     <p>Audio Reconstruction from Mel-spectrogram using different models and configurations.</p>
-    <ul>
-        <li><strong>+CFG2</strong> means classifier-free guidance with a guidance coefficient of 2.0</li>
-        <li><strong>+STFT</strong> means applied STFT loss</li>
-    </ul>
+    
 </div>
 
 <div class="audio-container">
-    <div class="audio-title-container eight">
+    <div class="audio-title-container four">
         <div class="audio-title"><strong>Ground Truth</strong></div>
-        <div class="audio-title"><strong>Vocos</strong></div>
         <div class="audio-title"><strong>PriorGrad</strong></div>
         <div class="audio-title"><strong>FreGrad</strong></div>
         <div class="audio-title"><strong>RFWave</strong></div>
-        <div class="audio-title"><strong>RFWave + STFT</strong></div>
-        <div class="audio-title"><strong>RFWave + CFG2</strong></div>
-        <div class="audio-title"><strong>RFWave + CFG2 + STFT</strong></div>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/ground_truth_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/vocos_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/priorgrad_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/fregrad_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_1_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_1_ft_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_2_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/09_378309.wav_05/rfwave_cfg_2_ft_SEP_09_378309.wav_05.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/ground_truth_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/vocos_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/priorgrad_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/fregrad_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_1_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_1_ft_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_2_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/57_352457.wav_08/rfwave_cfg_2_ft_SEP_57_352457.wav_08.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/ground_truth_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/vocos_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/priorgrad_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/fregrad_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_1_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_1_ft_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_2_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/44_1034944.wav_03/rfwave_cfg_2_ft_SEP_44_1034944.wav_03.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/ground_truth_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/vocos_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/priorgrad_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/fregrad_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/rfwave_cfg_1_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/rfwave_cfg_1_ft_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/rfwave_cfg_2_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/59_1108659.wav_18/rfwave_cfg_2_ft_SEP_59_1108659.wav_18.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/ground_truth_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/vocos_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/priorgrad_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/fregrad_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/rfwave_cfg_1_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/rfwave_cfg_1_ft_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/rfwave_cfg_2_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_20/rfwave_cfg_2_ft_SEP_45_1283045.wav_20.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/ground_truth_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/vocos_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/priorgrad_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/fregrad_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/rfwave_cfg_1_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/rfwave_cfg_1_ft_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/rfwave_cfg_2_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_08/rfwave_cfg_2_ft_SEP_52_226252.wav_08.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/ground_truth_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/vocos_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/priorgrad_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/fregrad_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/rfwave_cfg_1_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/rfwave_cfg_1_ft_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/rfwave_cfg_2_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/53_1385553.wav_05/rfwave_cfg_2_ft_SEP_53_1385553.wav_05.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/ground_truth_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/vocos_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/priorgrad_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/fregrad_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/rfwave_cfg_1_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/rfwave_cfg_1_ft_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/rfwave_cfg_2_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_18/rfwave_cfg_2_ft_SEP_03_518603.wav_18.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/ground_truth_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/vocos_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/priorgrad_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/fregrad_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/rfwave_cfg_1_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/rfwave_cfg_1_ft_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/rfwave_cfg_2_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_1065640.wav_08/rfwave_cfg_2_ft_SEP_40_1065640.wav_08.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/ground_truth_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/vocos_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/priorgrad_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/fregrad_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/rfwave_cfg_1_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/rfwave_cfg_1_ft_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/rfwave_cfg_2_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1245190.wav_19/rfwave_cfg_2_ft_SEP_90_1245190.wav_19.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/ground_truth_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/vocos_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/priorgrad_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/fregrad_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/rfwave_cfg_1_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/rfwave_cfg_1_ft_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/rfwave_cfg_2_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/61_1385561.wav_06/rfwave_cfg_2_ft_SEP_61_1385561.wav_06.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/ground_truth_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/vocos_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/priorgrad_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/fregrad_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/rfwave_cfg_1_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/rfwave_cfg_1_ft_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/rfwave_cfg_2_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/39_1298239.wav_08/rfwave_cfg_2_ft_SEP_39_1298239.wav_08.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/ground_truth_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/vocos_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/priorgrad_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/fregrad_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/rfwave_cfg_1_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/rfwave_cfg_1_ft_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/rfwave_cfg_2_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_15/rfwave_cfg_2_ft_SEP_89_352689.wav_15.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/ground_truth_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/vocos_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/priorgrad_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/fregrad_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/rfwave_cfg_1_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/rfwave_cfg_1_ft_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/rfwave_cfg_2_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/89_352689.wav_12/rfwave_cfg_2_ft_SEP_89_352689.wav_12.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/ground_truth_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/vocos_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/priorgrad_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/fregrad_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/rfwave_cfg_1_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/rfwave_cfg_1_ft_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/rfwave_cfg_2_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/18_423718.wav_03/rfwave_cfg_2_ft_SEP_18_423718.wav_03.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/ground_truth_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/vocos_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/priorgrad_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/fregrad_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/rfwave_cfg_1_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/rfwave_cfg_1_ft_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/rfwave_cfg_2_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/90_1417290.wav_18/rfwave_cfg_2_ft_SEP_90_1417290.wav_18.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/ground_truth_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/vocos_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/priorgrad_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/fregrad_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/rfwave_cfg_1_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/rfwave_cfg_1_ft_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/rfwave_cfg_2_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/48_134148.wav_02/rfwave_cfg_2_ft_SEP_48_134148.wav_02.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/ground_truth_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/vocos_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/priorgrad_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/fregrad_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/rfwave_cfg_1_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/rfwave_cfg_1_ft_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/rfwave_cfg_2_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/66_1285266.wav_15/rfwave_cfg_2_ft_SEP_66_1285266.wav_15.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/ground_truth_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/vocos_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/priorgrad_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/fregrad_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/rfwave_cfg_1_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/rfwave_cfg_1_ft_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/rfwave_cfg_2_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/52_226252.wav_12/rfwave_cfg_2_ft_SEP_52_226252.wav_12.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/ground_truth_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/vocos_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/priorgrad_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/fregrad_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/rfwave_cfg_1_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/rfwave_cfg_1_ft_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/rfwave_cfg_2_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1289274.wav_26/rfwave_cfg_2_ft_SEP_74_1289274.wav_26.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/ground_truth_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/vocos_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/priorgrad_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/fregrad_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/rfwave_cfg_1_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/rfwave_cfg_1_ft_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/rfwave_cfg_2_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/40_213940.wav_23/rfwave_cfg_2_ft_SEP_40_213940.wav_23.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/ground_truth_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/vocos_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/priorgrad_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/fregrad_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/rfwave_cfg_1_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/rfwave_cfg_1_ft_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/rfwave_cfg_2_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_06/rfwave_cfg_2_ft_SEP_65_436165.wav_06.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/ground_truth_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/vocos_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/priorgrad_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/fregrad_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/rfwave_cfg_1_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/rfwave_cfg_1_ft_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/rfwave_cfg_2_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/58_34858.wav_16/rfwave_cfg_2_ft_SEP_58_34858.wav_16.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/ground_truth_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/vocos_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/priorgrad_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/fregrad_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/rfwave_cfg_1_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/rfwave_cfg_1_ft_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/rfwave_cfg_2_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/65_436165.wav_14/rfwave_cfg_2_ft_SEP_65_436165.wav_14.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/ground_truth_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/vocos_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/priorgrad_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/fregrad_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/rfwave_cfg_1_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/rfwave_cfg_1_ft_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/rfwave_cfg_2_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/88_347488.wav_00/rfwave_cfg_2_ft_SEP_88_347488.wav_00.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/ground_truth_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/vocos_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/priorgrad_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/fregrad_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/rfwave_cfg_1_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/rfwave_cfg_1_ft_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/rfwave_cfg_2_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/98_31798.wav_11/rfwave_cfg_2_ft_SEP_98_31798.wav_11.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/ground_truth_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/vocos_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/priorgrad_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/fregrad_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/rfwave_cfg_1_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/rfwave_cfg_1_ft_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/rfwave_cfg_2_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_518603.wav_37/rfwave_cfg_2_ft_SEP_03_518603.wav_37.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/ground_truth_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/vocos_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/priorgrad_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/fregrad_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/rfwave_cfg_1_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/rfwave_cfg_1_ft_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/rfwave_cfg_2_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/74_1295574.wav_00/rfwave_cfg_2_ft_SEP_74_1295574.wav_00.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/ground_truth_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/vocos_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/priorgrad_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/fregrad_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/rfwave_cfg_1_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/rfwave_cfg_1_ft_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/rfwave_cfg_2_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/03_480403.wav_15/rfwave_cfg_2_ft_SEP_03_480403.wav_15.wav" type="audio/wav">not support</audio>
     </div>
 
-<div class="audio-row eight">
+<div class="audio-row four">
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/ground_truth_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/vocos_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/priorgrad_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/fregrad_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/rfwave_cfg_1_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
         <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/rfwave_cfg_1_ft_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/rfwave_cfg_2_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
-        <audio controls><source src="vocoder_audios/jamendo/45_1283045.wav_06/rfwave_cfg_2_ft_SEP_45_1283045.wav_06.wav" type="audio/wav">not support</audio>
     </div>
 
 </div>
